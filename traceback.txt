@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 55, in script
+    "Welcome to AMU"
+Exception: The say screen (or show_function) must return a Text object.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 55, in script
+    "Welcome to AMU"
+  File "C:\Users\shiva\Documents\renpy-7.1.3-sdk\renpy\ast.py", line 678, in execute
+    renpy.exports.say(who, what, interact=self.interact, *args, **kwargs)
+  File "C:\Users\shiva\Documents\renpy-7.1.3-sdk\renpy\exports.py", line 1229, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\shiva\Documents\renpy-7.1.3-sdk\renpy\character.py", line 1031, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Users\shiva\Documents\renpy-7.1.3-sdk\renpy\character.py", line 823, in do_display
+    **display_args)
+  File "C:\Users\shiva\Documents\renpy-7.1.3-sdk\renpy\character.py", line 541, in display_say
+    raise Exception("The say screen (or show_function) must return a Text object.")
+Exception: The say screen (or show_function) must return a Text object.
+
+Windows-8-6.2.9200
+Ren'Py 7.1.3.1092
+AMU v2 1.0
+Mon Dec 03 10:48:14 2018
